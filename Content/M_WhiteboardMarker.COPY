@@ -1,0 +1,154 @@
+Begin Object Class=/Script/Engine.Material Name="M_WhiteboardMarker"
+   Begin Object Class=/Script/Engine.MaterialExpressionClamp Name="MaterialExpressionClamp_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionOneMinus Name="MaterialExpressionOneMinus_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSubtract Name="MaterialExpressionSubtract_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSubtract Name="MaterialExpressionSubtract_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSubtract Name="MaterialExpressionSubtract_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureCoordinate Name="MaterialExpressionTextureCoordinate_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_0"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionClamp_0"
+      Input=(Expression=MaterialExpressionSubtract'"M_WhiteboardMarker:MaterialExpressionSubtract_2"')
+      MaterialExpressionEditorX=-352
+      MaterialExpressionEditorY=320
+      MaterialExpressionGuid=3DE726934321B334E0112FA8E8B6CBF7
+      Material=Material'"M_WhiteboardMarker"'
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_0"
+      Input=(Expression=MaterialExpressionVectorParameter'"M_WhiteboardMarker:MaterialExpressionVectorParameter_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      R=True
+      G=True
+      MaterialExpressionEditorX=-1264
+      MaterialExpressionEditorY=336
+      MaterialExpressionGuid=47AB873B46990431CAF38BB8F73C27FE
+      Material=Material'"M_WhiteboardMarker"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_0"
+      R=1.000000
+      MaterialExpressionEditorX=-816
+      MaterialExpressionEditorY=112
+      MaterialExpressionGuid=C84B06E34CD794EDB64350A73F38B3E5
+      Material=Material'"M_WhiteboardMarker"'
+   End Object
+   Begin Object Name="MaterialExpressionDivide_0"
+      A=(Expression=MaterialExpressionClamp'"M_WhiteboardMarker:MaterialExpressionClamp_0"')
+      B=(Expression=MaterialExpressionScalarParameter'"M_WhiteboardMarker:MaterialExpressionScalarParameter_0"')
+      MaterialExpressionEditorX=-80
+      MaterialExpressionEditorY=400
+      MaterialExpressionGuid=C3FA36F14AF894F4A72EDA9FB58EFCFD
+      Material=Material'"M_WhiteboardMarker"'
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_1"
+      MaterialFunction=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength.VectorLength"'
+      FunctionInputs(0)=(ExpressionInputId=1F411C544AE4A9ACC5F5F8A2A099B309,Input=(InputName="Vector 3"))
+      FunctionInputs(1)=(ExpressionInputId=E06081AD4255F67C6D398889E3CE73BA,Input=(Expression=MaterialExpressionSubtract'"M_WhiteboardMarker:MaterialExpressionSubtract_0"',InputName="Vector 2"))
+      FunctionOutputs(0)=(ExpressionOutputId=F186F43445EF47104CD650A242DEAECE,Output=(OutputName="V3 Length"))
+      FunctionOutputs(1)=(ExpressionOutputId=3C53F2D54FE1029372151E82C85F7755,Output=(OutputName="V2 Length"))
+      MaterialExpressionEditorX=-944
+      MaterialExpressionEditorY=240
+      MaterialExpressionGuid=1F4560CB4859732D856041BFD2D78BD6
+      Material=Material'"M_WhiteboardMarker"'
+      Outputs(0)=(OutputName="V3 Length")
+      Outputs(1)=(OutputName="V2 Length")
+   End Object
+   Begin Object Name="MaterialExpressionOneMinus_0"
+      Input=(Expression=MaterialExpressionScalarParameter'"M_WhiteboardMarker:MaterialExpressionScalarParameter_0"')
+      MaterialExpressionEditorX=-672
+      MaterialExpressionEditorY=464
+      MaterialExpressionGuid=744553CF445A6EBD845D6089DB05E6AA
+      Material=Material'"M_WhiteboardMarker"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_0"
+      DefaultValue=0.010000
+      ParameterName="Draw Size"
+      ExpressionGUID=FE99FB564358F93F5DA7DAB7A4986BB9
+      MaterialExpressionEditorX=-864
+      MaterialExpressionEditorY=560
+      MaterialExpressionGuid=0B74A3AB43C46657E61AF9A5A1015080
+      Material=Material'"M_WhiteboardMarker"'
+   End Object
+   Begin Object Name="MaterialExpressionSubtract_0"
+      A=(Expression=MaterialExpressionTextureCoordinate'"M_WhiteboardMarker:MaterialExpressionTextureCoordinate_0"')
+      B=(Expression=MaterialExpressionComponentMask'"M_WhiteboardMarker:MaterialExpressionComponentMask_0"')
+      MaterialExpressionEditorX=-1104
+      MaterialExpressionEditorY=240
+      MaterialExpressionGuid=391F19574835AF5A86797B9432761D9D
+      Material=Material'"M_WhiteboardMarker"'
+   End Object
+   Begin Object Name="MaterialExpressionSubtract_1"
+      A=(Expression=MaterialExpressionConstant'"M_WhiteboardMarker:MaterialExpressionConstant_0"')
+      B=(Expression=MaterialExpressionMaterialFunctionCall'"M_WhiteboardMarker:MaterialExpressionMaterialFunctionCall_1"',OutputIndex=1)
+      MaterialExpressionEditorX=-688
+      MaterialExpressionEditorY=176
+      MaterialExpressionGuid=786493B6490C0F4490EBCBA332D8E676
+      Material=Material'"M_WhiteboardMarker"'
+   End Object
+   Begin Object Name="MaterialExpressionSubtract_2"
+      A=(Expression=MaterialExpressionSubtract'"M_WhiteboardMarker:MaterialExpressionSubtract_1"')
+      B=(Expression=MaterialExpressionOneMinus'"M_WhiteboardMarker:MaterialExpressionOneMinus_0"')
+      MaterialExpressionEditorX=-528
+      MaterialExpressionEditorY=320
+      MaterialExpressionGuid=15D78AD54F27AA54EC4F67B55DA1D8CE
+      Material=Material'"M_WhiteboardMarker"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureCoordinate_0"
+      MaterialExpressionEditorX=-1264
+      MaterialExpressionEditorY=160
+      MaterialExpressionGuid=4537BA3C47FE98E1457B3BAAC485F0E2
+      Material=Material'"M_WhiteboardMarker"'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_0"
+      DefaultValue=(R=0.500000,G=0.500000,B=0.000000,A=0.000000)
+      ParameterName="DrawLocation"
+      ExpressionGUID=0B305899493D21B7867FDA84E88873E2
+      MaterialExpressionEditorX=-1469
+      MaterialExpressionEditorY=326
+      MaterialExpressionGuid=AC0F2DB841C8BE6468A527B448E44CD6
+      Material=Material'"M_WhiteboardMarker"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   EmissiveColor=(Expression=MaterialExpressionDivide'"MaterialExpressionDivide_0"')
+   BlendMode=BLEND_Additive
+   ShadingModel=MSM_Unlit
+   ShadingModels=(ShadingModelField=1)
+   EditorX=160
+   Expressions(0)=MaterialExpressionDivide'"MaterialExpressionDivide_0"'
+   Expressions(1)=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_0"'
+   Expressions(2)=MaterialExpressionComponentMask'"MaterialExpressionComponentMask_0"'
+   Expressions(3)=MaterialExpressionTextureCoordinate'"MaterialExpressionTextureCoordinate_0"'
+   Expressions(4)=MaterialExpressionSubtract'"MaterialExpressionSubtract_0"'
+   Expressions(5)=MaterialExpressionConstant'"MaterialExpressionConstant_0"'
+   Expressions(6)=MaterialExpressionSubtract'"MaterialExpressionSubtract_1"'
+   Expressions(7)=MaterialExpressionOneMinus'"MaterialExpressionOneMinus_0"'
+   Expressions(8)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_0"'
+   Expressions(9)=MaterialExpressionSubtract'"MaterialExpressionSubtract_2"'
+   Expressions(10)=MaterialExpressionClamp'"MaterialExpressionClamp_0"'
+   Expressions(11)=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_1"'
+   ParameterGroupData(0)=(GroupName="None")
+   ParameterGroupData(1)=(GroupName="None")
+   bCanMaskedBeAssumedOpaque=True
+   StateId=FB3CBAF1437B338ED88A2684BC2E0835
+   CachedExpressionData=(Parameters=(Entries[0]=(NameHashes=(11598841239580978842),ParameterInfos=((Name="Draw Size")),ExpressionGuids=(FE99FB564358F93F5DA7DAB7A4986BB9),Overrides=(False)),Entries[1]=(NameHashes=(17434590327790462643),ParameterInfos=((Name="DrawLocation")),ExpressionGuids=(0B305899493D21B7867FDA84E88873E2),Overrides=(False)),ScalarValues=(0.010000),VectorValues=((R=0.500000,G=0.500000,B=0.000000,A=0.000000)),ScalarMinMaxValues=((X=0.000000,Y=0.000000)),ScalarCurveValues=(None),ScalarCurveAtlasValues=(None),VectorChannelNameValues=(()),VectorUsedAsChannelMaskValues=(False)),FunctionInfos=((StateId=6BB9714649B7587803A983999B3C01AF,Function=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength.VectorLength"')),QualityLevelsUsed=(False,True,False))
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   ParameterOverviewExpansion=(("-12None", True))
+   LightingGuid=6F08B5B44B7240BC48A87C8D2C7E70E4
+End Object

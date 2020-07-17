@@ -1,0 +1,80 @@
+Begin Object Class=/Script/Engine.Material Name="M_Whiteboard"
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant3Vector Name="MaterialExpressionConstant3Vector_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_1"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_0"
+      MaterialExpressionEditorX=67
+      MaterialExpressionEditorY=270
+      MaterialExpressionGuid=F52588054A03426B7181A7A4D77D4301
+      Material=Material'"M_Whiteboard"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant3Vector_0"
+      Constant=(R=1.000000,G=1.000000,B=1.000000,A=0.000000)
+      MaterialExpressionEditorX=-576
+      MaterialExpressionEditorY=-80
+      MaterialExpressionGuid=73323CC340CAC22F6E2D1BA6CECA5B5F
+      Material=Material'"M_Whiteboard"'
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_0"
+      A=(Expression=MaterialExpressionConstant3Vector'"M_Whiteboard:MaterialExpressionConstant3Vector_0"')
+      B=(Expression=MaterialExpressionMultiply'"M_Whiteboard:MaterialExpressionMultiply_0"')
+      Alpha=(Expression=MaterialExpressionTextureSample'"M_Whiteboard:MaterialExpressionTextureSample_1"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      MaterialExpressionEditorX=-128
+      MaterialExpressionEditorY=160
+      MaterialExpressionGuid=C441677A4FAC299778BB92A1CE9E5E65
+      Material=Material'"M_Whiteboard"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0"
+      A=(Expression=MaterialExpressionVectorParameter'"M_Whiteboard:MaterialExpressionVectorParameter_1"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionTextureSample'"M_Whiteboard:MaterialExpressionTextureSample_1"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      MaterialExpressionEditorX=-336
+      MaterialExpressionEditorY=192
+      MaterialExpressionGuid=37915BF742ABF4328B9D80A09F239D4D
+      Material=Material'"M_Whiteboard"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_1"
+      Texture=CanvasRenderTarget2D'"/Game/Whiteboard/RT_Whiteboard.RT_Whiteboard"'
+      SamplerType=SAMPLERTYPE_LinearColor
+      MaterialExpressionEditorX=-608
+      MaterialExpressionEditorY=384
+      MaterialExpressionGuid=A299FE124DD8E601D3252891145AA386
+      Material=Material'"M_Whiteboard"'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_1"
+      DefaultValue=(R=0.000000,G=0.000000,B=1.000000,A=1.000000)
+      ExpressionGUID=D7E6C9B840906F54DB7A5EA499E6A963
+      MaterialExpressionEditorX=-576
+      MaterialExpressionEditorY=128
+      MaterialExpressionGuid=B7F433FB41BDECBF2FE3599F1B449A10
+      Material=Material'"M_Whiteboard"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionLinearInterpolate'"MaterialExpressionLinearInterpolate_0"')
+   Roughness=(Expression=MaterialExpressionConstant'"MaterialExpressionConstant_0"')
+   EditorX=208
+   Expressions(0)=MaterialExpressionLinearInterpolate'"MaterialExpressionLinearInterpolate_0"'
+   Expressions(1)=MaterialExpressionConstant'"MaterialExpressionConstant_0"'
+   Expressions(2)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_1"'
+   Expressions(3)=MaterialExpressionConstant3Vector'"MaterialExpressionConstant3Vector_0"'
+   Expressions(4)=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_1"'
+   Expressions(5)=MaterialExpressionMultiply'"MaterialExpressionMultiply_0"'
+   ParameterGroupData(0)=(GroupName="None")
+   bCanMaskedBeAssumedOpaque=True
+   StateId=73E68F554D35F284DA37C09DCB9E384F
+   CachedExpressionData=(Parameters=(Entries[1]=(NameHashes=(10371715421228879687),ParameterInfos=((Name="Param")),ExpressionGuids=(D7E6C9B840906F54DB7A5EA499E6A963),Overrides=(False)),VectorValues=((R=0.000000,G=0.000000,B=1.000000,A=1.000000)),VectorChannelNameValues=(()),VectorUsedAsChannelMaskValues=(False)),ReferencedTextures=(CanvasRenderTarget2D'"/Game/Whiteboard/RT_Whiteboard.RT_Whiteboard"'),QualityLevelsUsed=(False,True,False))
+   ReferencedTextureGuids(0)=83DC5F124E21B1B025D561A549657C1E
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=58599821409A279F8BC2669EF6730E38
+End Object
